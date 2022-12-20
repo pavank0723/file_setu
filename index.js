@@ -11,6 +11,7 @@ import swaggerDocument from './swagger.json'
 // import multer from 'multer'
 
 import routes from './src/routes'
+import { swaggerCustomUI } from './public/css/customCss'
 
 // const upload = multer()
 const app = express()
@@ -29,10 +30,17 @@ db.once('open', () => {
 })
 //#endregion
 
+// Static Files
+app.use(express.static('public'));
+
+// Example for other olders
+app.use('/css', express.static(__dirname + 'public/css'))
+
 //#region Swagger Setup
 var options = {
-    //customCss: '.swagger-ui .topbar {background-color: #3f6cff;}.swagger-ui .opblock.opblock-post .opblock-summary-method {background: #0255c1;}',
-    customSiteTitle: "File Setu API | Welcome"
+    customCss: `${swaggerCustomUI}`,
+    customSiteTitle: "File Setu API | Welcome",
+    customfavIcon: "../assets/file_setu_icon.png"
 };
 
 app.use('/api-docs',swaggerUi.serve, swaggerUi.setup(swaggerDocument,options))
