@@ -17,6 +17,22 @@
         {
             "name": "Auth",
             "description": "All the autherization method"
+        },
+        {
+            "name": "Single File Converter",
+            "description": "All the single file converter one to another"
+        },
+        {
+            "name": "Multi File Converter",
+            "description": "All the multiple file converter one to another"
+        },
+        {
+            "name": "Single File Merger",
+            "description": "All the single file merger one to another"
+        },
+        {
+            "name": "Multi File Merger",
+            "description": "All the multiple file merger one to another"
         }
     ],
     "schemes": [

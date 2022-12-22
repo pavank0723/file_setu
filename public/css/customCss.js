@@ -1,16 +1,16 @@
 export const swaggerCustomUI = `
 :root {
-  --post-color: #8C1911;
-  --get-color: #EA291C;
+  --post-color: #CC5726;
+  --get-color: #FF8A59;
   --get_id-color: #FFCC00;
-  --put-color: #EE5449;
-  --delete-color: #2C2C2C;
-  --body-color: #FFEEE9;
-  --topbar-color : #FFDFDD;
-  --post-body-color : rgba(140, 25, 17, 0.1); 
-  --get-body-color : rgba(234, 41, 28, 0.2);
-  --put-body-color : rgba(238, 84, 73, 0.13);
-  --delete-body-color : rgba(44, 44, 44, 0.18);
+  --put-color: #FF6D2F;
+  --delete-color: #662C13;
+  --body-color: #FFF4F0;
+  --topbar-color : #FFE9DF;
+  --post-body-color : rgba(204, 87, 38, 0.1); 
+  --get-body-color : rgba(255, 138, 89, 0.2);
+  --put-body-color : rgba(255, 109, 47, 0.13);
+  --delete-body-color : rgba(102, 44, 19, 0.18);
 }
 body {
   background:  var(--body-color);
